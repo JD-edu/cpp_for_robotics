@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_1_C++_basic\cpp_for_robotics\cpp_for_robotics\main.cpp(138,18): warning C4566: 유니버설 문자 이름 '\U0001F916'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_1_C++_basic\cpp_for_robotics\cpp_for_robotics\main.cpp(161,26): warning C4566: 유니버설 문자 이름 '\u26A0'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_1_C++_basic\cpp_for_robotics\cpp_for_robotics\main.cpp(161,26): warning C4566: 유니버설 문자 이름 '\uFE0F'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_1_C++_basic\cpp_for_robotics\cpp_for_robotics\main.cpp(168,18): warning C4566: 유니버설 문자 이름 '\U0001F3C1'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  cpp_for_robotics.vcxproj -> C:\Users\conne\Downloads\cpp_for_robotics\chapter_1_C++_basic\cpp_for_robotics\x64\Debug\cpp_for_robotics.exe
