@@ -1,0 +1,3 @@
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux/build/CMakeFiles/camera_stream.dir
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux/build/CMakeFiles/edit_cache.dir
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux/build/CMakeFiles/rebuild_cache.dir

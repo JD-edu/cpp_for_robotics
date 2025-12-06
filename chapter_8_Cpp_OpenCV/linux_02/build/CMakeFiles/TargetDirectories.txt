@@ -1,0 +1,4 @@
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_02/build/CMakeFiles/camera_lib.dir
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_02/build/CMakeFiles/camera_app.dir
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_02/build/CMakeFiles/edit_cache.dir
+/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_02/build/CMakeFiles/rebuild_cache.dir
