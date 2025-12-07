@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\MilitaryRobot.obj",
+            "outputs": [
+                "x64\\Debug\\MilitaryRobot.h_563A0C77F8F72106.ifc.dt.module.json",
+                "x64\\Debug\\MilitaryRobot.h_563A0C77F8F72106.ifc.dt.d.json",
+                "x64\\Debug\\MilitaryRobot.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\conne\\Downloads\\cpp_for_robotics\\chapter_4_medium_level_Cpp\\chapter_4_1\\chapter_4_1_2\\military_robot\\MilitaryRobot\\MilitaryRobot\\MilitaryRobot.h",
+                    "source-path": "c:\\users\\conne\\downloads\\cpp_for_robotics\\chapter_4_medium_level_cpp\\chapter_4_1\\chapter_4_1_2\\military_robot\\militaryrobot\\militaryrobot\\militaryrobot.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

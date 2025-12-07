@@ -1,0 +1,8 @@
+﻿  TestOverride.cpp
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\TestOverride\TestOverride.cpp(56,18): warning C4566: 유니버설 문자 이름 '\u2022'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\TestOverride\TestOverride.cpp(57,18): warning C4566: 유니버설 문자 이름 '\u2022'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\TestOverride\TestOverride.cpp(58,18): warning C4566: 유니버설 문자 이름 '\u2022'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\TestOverride\TestOverride.cpp(61,18): warning C4566: 유니버설 문자 이름 '\u2022'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\TestOverride\TestOverride.cpp(62,18): warning C4566: 유니버설 문자 이름 '\u2022'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\TestOverride\TestOverride.cpp(63,18): warning C4566: 유니버설 문자 이름 '\u2022'(으)로 표현되는 문자는 현재 코드 페이지(949)에서 표현할 수 없습니다.
+  TestOverride.vcxproj -> C:\Users\conne\Downloads\cpp_for_robotics\chapter_4_medium_level_Cpp\chapter_4_2\chapter_4_2_2\TestOverride\x64\Debug\TestOverride.exe
