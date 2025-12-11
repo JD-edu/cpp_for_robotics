@@ -39,7 +39,7 @@ void loop() {
   Serial.println(sensorValue);
   
   // 방법 2: 상세한 출력
-  Serial.print("[");ls 
+  Serial.print("[");
   Serial.print(millis());        // 경과 시간
   Serial.print("ms] 센서 값: ");
   Serial.print(sensorValue);

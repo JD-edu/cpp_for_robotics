@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="RobotControl/RobotControl.vcxproj" />
+  <Project Path="RobotControl/RobotControl.vcxproj" Id="d6797dea-29df-41e3-b14e-385d8cc89010" />
 </Solution>

@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ExplorerRobot/ExplorerRobot.vcxproj" />
+  <Project Path="ExplorerRobot/ExplorerRobot.vcxproj" Id="05037d02-704f-42ef-b88c-9a9190de25ed" />
 </Solution>

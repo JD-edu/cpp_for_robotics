@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="TestOverride/TestOverride.vcxproj" />
+  <Project Path="TestOverride/TestOverride.vcxproj" Id="e02bd2f1-3df2-4127-8e61-003304fa5c7b" />
 </Solution>

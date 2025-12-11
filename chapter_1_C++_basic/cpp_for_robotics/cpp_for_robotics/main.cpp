@@ -2,8 +2,8 @@
 #include <cmath>
 #include <string>
 
-#ifndef M_PI
-#define M_PI 3.14159265358979323846
+#ifndef M_PI  
+#define M_PI 3.14159265358979323846  
 #endif
 
 // 로봇 상태 구조체
@@ -158,7 +158,7 @@ int main() {
 
         // 5. 배터리 경고
         if (robot.batteryLevel < 20) {
-            std::cout << "⚠️ 배터리 부족 경고! 충전이 필요합니다." << std::endl;
+            std::cout << "배터리 부족 경고! 충전이 필요합니다." << std::endl;
         }
 
         std::cout << std::endl;

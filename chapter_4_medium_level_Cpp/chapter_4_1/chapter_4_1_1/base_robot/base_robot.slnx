@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="base_robot/base_robot.vcxproj" />
+  <Project Path="base_robot/base_robot.vcxproj" Id="3a7678e2-61e6-4d92-abfa-1538c391f691" />
 </Solution>

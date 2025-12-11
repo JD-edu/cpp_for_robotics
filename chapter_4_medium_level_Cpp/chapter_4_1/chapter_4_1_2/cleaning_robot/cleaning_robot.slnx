@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="cleaning_robot/cleaning_robot.vcxproj" />
+  <Project Path="cleaning_robot/cleaning_robot.vcxproj" Id="20a8eb5a-1a23-40f3-9716-95d609d4e5e3" />
 </Solution>

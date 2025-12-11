@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="cpp_for_robotics/cpp_for_robotics.vcxproj" />
+  <Project Path="cpp_for_robotics/cpp_for_robotics.vcxproj" Id="4c96ada6-4c3f-4786-84fc-965af1aeeb65" />
 </Solution>

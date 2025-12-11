@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="chapter_4_5_3_stack_heap/chapter_4_5_3_stack_heap.vcxproj" />
+  <Project Path="chapter_4_5_3_stack_heap/chapter_4_5_3_stack_heap.vcxproj" Id="10fec960-4d71-4f4e-ace0-372c87ea0e0c" />
 </Solution>
