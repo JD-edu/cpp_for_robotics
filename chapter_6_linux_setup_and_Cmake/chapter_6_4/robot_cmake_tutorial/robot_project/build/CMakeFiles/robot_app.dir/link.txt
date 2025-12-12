@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra CMakeFiles/robot_app.dir/main.cpp.o CMakeFiles/robot_app.dir/src/robot_math.cpp.o CMakeFiles/robot_app.dir/src/sensor.cpp.o CMakeFiles/robot_app.dir/src/motor.cpp.o -o robot_app  -lm 

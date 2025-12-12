@@ -1,7 +1,8 @@
 #define LED_PIN 13
-#define MOTOR_AIN1 7
-#define MOTOR_AIN2 8
-#define MOTOR_PWMA 9
+#define MOTOR_AIN1 4
+#define MOTOR_AIN2 5
+#define MOTOR_PWMA 3
+#define STANBY     6
 
 void setup() {
   Serial.begin(115200);
@@ -9,6 +10,8 @@ void setup() {
   pinMode(MOTOR_AIN1, OUTPUT);
   pinMode(MOTOR_AIN2, OUTPUT);
   pinMode(MOTOR_PWMA, OUTPUT);
+  pinMode(STANBY, OUTPUT);
+  digitalWrite(STANBY, HIGH);
 
   Serial.println("Arduino Ready");
 }

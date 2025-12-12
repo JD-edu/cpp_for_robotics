@@ -45,7 +45,8 @@ bool receivePacket(int serial_fd, DataPacket& packet) {
   
     // 헤더 바이트 찾기
     do {
-        if (read(serial_fd, &byte, 1) != 1) return false;
+        if (read(serial_fd, &byte, 1) != 1) 
+            return false;
     } while (byte != HEADER);
   
     packet.header = byte;
@@ -61,7 +62,7 @@ bool receivePacket(int serial_fd, DataPacket& packet) {
     if (read(serial_fd, &packet.checksum, 1) != 1) return false;
   
     // 체크섬 검증
-    unsigned char calculated_checksum = packet.data[0] ^ packet.data[1] ^ 
+    unsigned char calculated_checksum   = packet.data[0] ^ packet.data[1] ^ 
                                        packet.data[2] ^ packet.data[3];
   
     return (calculated_checksum == packet.checksum);

@@ -117,37 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tcp_server
+# Target rules for targets named server
 
 # Build rule for target.
-tcp_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp_server
-.PHONY : tcp_server
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-tcp_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/build
-.PHONY : tcp_server/fast
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
 #=============================================================================
-# Target rules for targets named tcp_client
+# Target rules for targets named client
 
 # Build rule for target.
-tcp_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp_client
-.PHONY : tcp_client
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
 
 # fast build rule for target.
-tcp_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/build
-.PHONY : tcp_client/fast
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 tcp_client.o: tcp_client.cpp.o
 .PHONY : tcp_client.o
 
 # target to build an object file
 tcp_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/tcp_client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/tcp_client.cpp.o
 .PHONY : tcp_client.cpp.o
 
 tcp_client.i: tcp_client.cpp.i
@@ -155,7 +155,7 @@ tcp_client.i: tcp_client.cpp.i
 
 # target to preprocess a source file
 tcp_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/tcp_client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/tcp_client.cpp.i
 .PHONY : tcp_client.cpp.i
 
 tcp_client.s: tcp_client.cpp.s
@@ -163,7 +163,7 @@ tcp_client.s: tcp_client.cpp.s
 
 # target to generate assembly for a file
 tcp_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_client.dir/build.make CMakeFiles/tcp_client.dir/tcp_client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/tcp_client.cpp.s
 .PHONY : tcp_client.cpp.s
 
 tcp_server.o: tcp_server.cpp.o
@@ -171,7 +171,7 @@ tcp_server.o: tcp_server.cpp.o
 
 # target to build an object file
 tcp_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/tcp_server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/tcp_server.cpp.o
 .PHONY : tcp_server.cpp.o
 
 tcp_server.i: tcp_server.cpp.i
@@ -179,7 +179,7 @@ tcp_server.i: tcp_server.cpp.i
 
 # target to preprocess a source file
 tcp_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/tcp_server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/tcp_server.cpp.i
 .PHONY : tcp_server.cpp.i
 
 tcp_server.s: tcp_server.cpp.s
@@ -187,7 +187,7 @@ tcp_server.s: tcp_server.cpp.s
 
 # target to generate assembly for a file
 tcp_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/tcp_server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/tcp_server.cpp.s
 .PHONY : tcp_server.cpp.s
 
 # Help Target
@@ -198,8 +198,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... tcp_client"
-	@echo "... tcp_server"
+	@echo "... client"
+	@echo "... server"
 	@echo "... tcp_client.o"
 	@echo "... tcp_client.i"
 	@echo "... tcp_client.s"

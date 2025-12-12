@@ -12,11 +12,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # 서버 실행 파일 정의
 # 소스 파일: server.cpp
-add_executable(tcp_server tcp_server.cpp)
+add_executable(server tcp_server.cpp)
 
 # 클라이언트 실행 파일 정의
 # 소스 파일: client.cpp
-add_executable(tcp_client tcp_client.cpp)
+add_executable(client tcp_client.cpp)
 
 # --- 소켓 라이브러리 링크 설정 ---
 
