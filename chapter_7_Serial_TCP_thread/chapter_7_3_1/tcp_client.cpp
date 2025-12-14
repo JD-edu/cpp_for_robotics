@@ -22,7 +22,7 @@ int main() {
     server_addr.sin_port = htons(8080);  // 서버 포트
     
     // IP 주소 변환 (127.0.0.1 = localhost)
-    if (inet_pton(AF_INET, "127.0.0.1", &server_addr.sin_addr) <= 0) {
+    if (inet_pton(AF_INET, "192.168.35.22", &server_addr.sin_addr) <= 0) {
         std::cerr << "Invalid address" << std::endl;
         close(sock_fd);
         return -1;

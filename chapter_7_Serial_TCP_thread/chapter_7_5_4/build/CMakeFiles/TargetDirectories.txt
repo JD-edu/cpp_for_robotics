@@ -1,0 +1,4 @@
+/home/jd/cpp_for_robotics/chapter_7_Serial_TCP_thread/chapter_7_5_4/build/CMakeFiles/server.dir
+/home/jd/cpp_for_robotics/chapter_7_Serial_TCP_thread/chapter_7_5_4/build/CMakeFiles/client.dir
+/home/jd/cpp_for_robotics/chapter_7_Serial_TCP_thread/chapter_7_5_4/build/CMakeFiles/edit_cache.dir
+/home/jd/cpp_for_robotics/chapter_7_Serial_TCP_thread/chapter_7_5_4/build/CMakeFiles/rebuild_cache.dir
