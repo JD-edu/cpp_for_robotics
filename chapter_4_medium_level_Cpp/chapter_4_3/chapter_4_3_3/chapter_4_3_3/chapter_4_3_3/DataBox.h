@@ -14,7 +14,7 @@ private:
 public:
     // 생성자
     DataBox(const std::string& boxName)
-        : name(boxName), hasData(false), data(T{}) {
+        : name(boxName), hasData(false), data(T{}) { // T{}는 템플릿인 data를 기본값으로 초기화하라는 의미 
         std::cout << "DataBox<" << typeid(T).name() << "> '"
             << name << "' 생성됨" << std::endl;
     }
@@ -27,7 +27,7 @@ public:
     }
 
     // 데이터 가져오기
-    T get() const {
+    T get() const {  // const의 의미는 이 함수는 읽기 전용!
         if (!hasData) {
             std::cout << "경고: " << name << "에 데이터가 없습니다!" << std::endl;
             return T{};  // 기본값 반환
@@ -41,7 +41,7 @@ public:
     }
 
     // 데이터 초기화
-    void clear() {
+    void clear() {  // T{}는 템플릿 변수인 data를 템플릿 기본값으로 초기화 하라는 의미
         data = T{};
         hasData = false;
         std::cout << name << " 초기화됨" << std::endl;

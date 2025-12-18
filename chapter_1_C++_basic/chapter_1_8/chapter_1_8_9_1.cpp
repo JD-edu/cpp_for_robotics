@@ -62,6 +62,8 @@ void moveRobot(RobotState& robot, double distance) {
     controlMotors(70); // 양쪽 모터 동일 속도
 }
 
+// 로봇이 설정값을 가지는 구조체 RobotState는 call by value로 전달하면 안됨 
+// call by reference로 전달하면 원본을 바로 수정할 수 있음 
 void moveRobot(RobotState& robot, double distance, double angle) {
     // 각도를 바꾸며 이동
     robot.angle += angle;

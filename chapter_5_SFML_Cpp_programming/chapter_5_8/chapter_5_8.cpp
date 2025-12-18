@@ -10,7 +10,7 @@ private:
 };
 Enemy::Enemy() {
     c.setFillColor(sf::Color::Yellow);
-    c.setPosition(rand() % 640, 0);
+    c.setPosition(rand()%640, 0);
     c.setRadius(40);
 }
 
@@ -24,9 +24,25 @@ void Enemy::update(sf::RenderWindow& win) {
     win.draw(c);
 }
 
+class Zigzag : public Enemy { 
+public:
+    int i = 1;
+    void update(sf::RenderWindow& win) {
+        int y = c.getPosition().y;
+        if (y > 600) {
+            y = 0;
+            c.setPosition(rand() % 800, y);
+        }
+        i *= -1;
+        c.move(20 * i, 5);
+        win.draw(c);
+    }
+};
+
 int main()
 {
     Enemy e1;
+    Zigzag z1;
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML Window");
 
     sf::Texture texture;
@@ -48,6 +64,7 @@ int main()
         window.clear();
         window.draw(sprite);
         e1.update(window);
+        z1.update(window);
         window.display();
     }
 
