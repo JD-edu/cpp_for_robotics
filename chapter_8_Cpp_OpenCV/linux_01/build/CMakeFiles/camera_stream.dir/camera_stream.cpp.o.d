@@ -1,5 +1,5 @@
 CMakeFiles/camera_stream.dir/camera_stream.cpp.o: \
- /home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux/camera_stream.cpp \
+ /home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_01/camera_stream.cpp \
  /usr/include/stdc-predef.h /usr/local/include/opencv4/opencv2/opencv.hpp \
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \

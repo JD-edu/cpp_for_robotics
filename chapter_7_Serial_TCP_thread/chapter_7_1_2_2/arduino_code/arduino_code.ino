@@ -1,8 +1,10 @@
 #define LED_PIN 13
-#define MOTOR_AIN1 4
-#define MOTOR_AIN2 5
-#define MOTOR_PWMA 3
-#define STANBY     6
+#define MOTOR_AIN1 7
+#define MOTOR_AIN2 8
+#define MOTOR_PWMA 5
+
+// Standby 핀 (공통)
+const  int STBY =  10; // STBY 핀
 
 void setup() {
   Serial.begin(115200);
@@ -10,9 +12,10 @@ void setup() {
   pinMode(MOTOR_AIN1, OUTPUT);
   pinMode(MOTOR_AIN2, OUTPUT);
   pinMode(MOTOR_PWMA, OUTPUT);
-  pinMode(STANBY, OUTPUT);
-  digitalWrite(STANBY, HIGH);
-
+  pinMode(STBY, OUTPUT);
+	// TB6612FNG 활성화 (STBY를 HIGH로
+	digitalWrite(STBY, HIGH);
+  
   Serial.println("Arduino Ready");
 }
 
@@ -20,7 +23,7 @@ void loop() {
   if (Serial.available()) {
     String command = Serial.readStringUntil('\n');
     command.trim();
-
+  
     if (command == "LED_ON") {
       digitalWrite(LED_PIN, HIGH);
       Serial.println("LED ON");

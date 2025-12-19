@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux/camera_stream.cpp" "CMakeFiles/camera_stream.dir/camera_stream.cpp.o" "gcc" "CMakeFiles/camera_stream.dir/camera_stream.cpp.o.d"
+  "/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_01/camera_stream.cpp" "CMakeFiles/camera_stream.dir/camera_stream.cpp.o" "gcc" "CMakeFiles/camera_stream.dir/camera_stream.cpp.o.d"
   )
 
 # Targets to which this target links.

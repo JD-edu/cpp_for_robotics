@@ -52,7 +52,7 @@ void sendIntegerPacket(int serial_fd, int32_t value) {
 }
 
 int main() {
-    int serial_fd = setup_serial("/dev/ttyUSB0");  // 이전 함수 사용
+    int serial_fd = setup_serial("/dev/ttyUSB1");  // 이전 함수 사용
     if (serial_fd == -1) {
         std::cerr << "시리얼 포트를 열 수 없습니다." << std::endl;
         return -1;

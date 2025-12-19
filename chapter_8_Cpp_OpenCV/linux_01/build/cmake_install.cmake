@@ -1,4 +1,4 @@
-# Install script for directory: /home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux
+# Install script for directory: /home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jd/cpp_for_robotics/chapter_8_Cpp_OpenCV/linux_01/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

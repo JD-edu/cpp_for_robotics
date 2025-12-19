@@ -26,7 +26,7 @@ SOFTWARE.
 You can build this code using 2 ways.
 
 Method 1: simply using command line 
-g++ 303_draw_circle.cpp -o 302_draw_circle -I/usr/local/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_videoio -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc
+g++ 303_draw_circle.cpp -o 303_draw_circle -I/usr/local/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_videoio -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc
 
 Method 2: using cmake 
 refer to cmake_build.md 
