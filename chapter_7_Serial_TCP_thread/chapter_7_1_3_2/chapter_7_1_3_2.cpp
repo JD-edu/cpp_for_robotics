@@ -5,6 +5,9 @@
 #include <cstring>
 #include <iomanip>
 
+// g++ -o serial_receive chapter_7_1_3_2.cpp
+
+
 const unsigned char HEADER = 0xAA;
 const unsigned char PACKET_SIZE = 0x06;
 

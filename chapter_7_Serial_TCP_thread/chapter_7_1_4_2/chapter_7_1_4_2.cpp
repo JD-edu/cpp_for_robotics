@@ -106,7 +106,7 @@ public:
 
 int main() {
     try {
-        ArduinoController arduino("/dev/ttyUSB0");
+        ArduinoController arduino("/dev/ttyUSB1");
 
         std::cout << "Boost.Asio 시리얼 통신 시작" << std::endl;
         std::cout << "명령어: on, off, get, quit" << std::endl;
