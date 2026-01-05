@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="chapter_4_5_4_shared_ptr/chapter_4_5_4_shared_ptr.vcxproj" />
+</Solution>
