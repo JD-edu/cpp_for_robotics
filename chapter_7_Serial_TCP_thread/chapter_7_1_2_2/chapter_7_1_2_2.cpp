@@ -15,8 +15,8 @@ int setup_serial(const char* device) {
     memset(&tty, 0, sizeof tty);
     tcgetattr(serial_fd, &tty);
   
-    cfsetospeed(&tty, B9600);
-    cfsetispeed(&tty, B9600);
+    cfsetospeed(&tty, B115200);
+    cfsetispeed(&tty, B115200);
   
     tty.c_cflag &= ~PARENB;
     tty.c_cflag &= ~CSTOPB;
@@ -37,7 +37,7 @@ void send_command(int serial_fd, const std::string& command) {
 }
 
 int main() {
-    int serial_fd = setup_serial("/dev/ttyACM0");
+    int serial_fd = setup_serial("/dev/ttyUSB0");
     if (serial_fd == -1) {
         std::cerr << "시리얼 포트를 열 수 없습니다." << std::endl;
         return -1;

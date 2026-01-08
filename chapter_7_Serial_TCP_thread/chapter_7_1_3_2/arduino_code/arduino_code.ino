@@ -34,5 +34,5 @@ void loop() {
   
     if (counter > 10000) counter = 0;
   
-    delay(100);  // 1초마다 전송
+    delay(10);  // 1초마다 전송
 }
