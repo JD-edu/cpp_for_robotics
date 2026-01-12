@@ -18,23 +18,45 @@ struct IMUData {
 
 // 시리얼 포트 초기화 함수
 bool initSerial(const char* portName) {
-    serial_fd = open(portName, O_RDWR | O_NOCTTY);
+    // 1. O_NDELAY로 열고 나서 fcntl로 다시 Blocking 모드로 전환 (안정적인 오픈 방식)
+    serial_fd = open(portName, O_RDWR | O_NOCTTY | O_NDELAY);
     if (serial_fd == -1) {
         std::cerr << "포트를 열 수 없습니다: " << portName << std::endl;
         return false;
     }
+    fcntl(serial_fd, F_SETFL, 0); // 다시 블로킹 모드로 설정
 
     struct termios options;
-    tcgetattr(serial_fd, &options);
-    
-    // 보드레이트 115200 설정
+    // --- 매우 중요: 설정 초기화 ---
+    memset(&options, 0, sizeof(options));
+
+    if (tcgetattr(serial_fd, &options) != 0) return false;
+
+    // 2. 보드레이트 설정
     cfsetispeed(&options, B115200);
     cfsetospeed(&options, B115200);
 
-    options.c_cflag = CS8 | CLOCAL | CREAD; // 8비트, 로컬 연결, 수신 가능
-    options.c_iflag = IGNPAR;               // 패리티 오류 무시
-    options.c_oflag = 0;
-    options.c_lflag = 0;                    // Raw 모드 (캐릭터 단위 처리)
+    // 3. 제어 모드 (Control Modes)
+    options.c_cflag |= (CLOCAL | CREAD); // 로컬 연결, 수신 활성화
+    options.c_cflag &= ~PARENB;          // 패리티 없음
+    options.c_cflag &= ~CSTOPB;          // 1 스톱비트
+    options.c_cflag &= ~CSIZE;           // 크기 마스크 제거
+    options.c_cflag |= CS8;              // 8비트 데이터
+    options.c_cflag &= ~CRTSCTS;         // 하드웨어 흐름 제어 비활성화 (핵심!)
+
+    // 4. 로컬 모드 (Local Modes)
+    options.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG); // Raw 입력 모드
+
+    // 5. 입력 모드 (Input Modes)
+    options.c_iflag &= ~(IXON | IXOFF | IXANY); // 소프트웨어 흐름 제어 비활성화
+    options.c_iflag |= IGNPAR;                  // 패리티 오류 무시
+
+    // 6. 출력 모드 (Output Modes)
+    options.c_oflag &= ~OPOST;                  // Raw 출력 모드
+
+    // 7. 블로킹 동작 설정 (최소 1바이트 올 때까지 대기)
+    options.c_cc[VMIN] = 1;
+    options.c_cc[VTIME] = 0;
 
     tcflush(serial_fd, TCIFLUSH);
     if (tcsetattr(serial_fd, TCSANOW, &options) != 0) {

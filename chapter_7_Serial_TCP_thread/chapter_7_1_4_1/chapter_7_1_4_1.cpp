@@ -7,7 +7,7 @@
 
 // 시리얼 포트 장치 경로를 여기에 지정하십시오. (예: /dev/ttyUSB0, /dev/ttyACM0 등)
 // 아두이노 연결 시 일반적으로 /dev/ttyACM0 또는 /dev/ttyUSB0 입니다.
-#define DEVICE_PATH "/dev/ttyUSB1" 
+#define DEVICE_PATH "/dev/ttyUSB0" 
 #define BAUD_RATE 115200
 
 int main() {
